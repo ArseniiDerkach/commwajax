@@ -1,0 +1,25 @@
+{
+  "name": "commwajax",
+  "version": "1.0.0",
+  "description": "commentaries on a page using ajax",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ArseniyDerkach/commwajax.git"
+  },
+  "keywords": [
+    "ajax"
+  ],
+  "author": "Arsenii Derkach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArseniyDerkach/commwajax/issues"
+  },
+  "homepage": "https://github.com/ArseniyDerkach/commwajax#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
