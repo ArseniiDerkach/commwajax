@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/ArseniyDerkach/commwajax#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3"
   }
 }

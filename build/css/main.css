@@ -1,0 +1,78 @@
+header {
+  height: 400px;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: -1; }
+
+.date {
+  font-size: 1em;
+  color: #b6b6b6; }
+
+body {
+  background-color: #f2f2f2; }
+
+section {
+  margin-top: -80px !important;
+  z-index: 2;
+  width: 940px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  section .post {
+    margin: 0 80px; }
+
+.comments {
+  margin: 0 !important; }
+
+h1 {
+  margin: 0;
+  height: 80px;
+  vertical-align: bottom;
+  position: relative;
+  font-size: 2em;
+  border-bottom: 1px solid #f2f2f2; }
+  h1 span {
+    position: absolute;
+    bottom: 10px; }
+
+figure {
+  float: left;
+  position: relative; }
+
+.image-md-sm {
+  display: none; }
+
+.image-lg {
+  margin-left: -80px;
+  margin-right: 20px;
+  border: 5px solid #f2f2f2;
+  border-left: 0;
+  line-height: 0; }
+  .image-lg figcaption {
+    width: 94%;
+    height: 94%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: #fbfcfc;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1; }
+    .image-lg figcaption:hover {
+      animation: fadeIn 0.8s both;
+      opacity: 1; }
+    .image-lg figcaption div {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      width: 100%; }
+    .image-lg figcaption a {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/eye.png") center center no-repeat; }

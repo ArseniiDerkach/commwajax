@@ -1,0 +1,12 @@
+h1{
+	margin: 0;
+	height: 80px;
+	vertical-align: bottom;
+	position: relative;
+	font-size: 2em;
+	border-bottom: 1px solid $gray;
+	span{
+		position: absolute;
+		bottom: 10px;
+	}
+}
