@@ -2,3 +2,43 @@
 	font-size: 1em;
 	color: $font-gray;
 }
+.support-info{
+	font-size: 1em;
+	color: $font-gray;
+	span{
+		position: relative;
+		padding-left: 70px;
+		&:first-of-type{
+			padding-left: 25px;
+		}
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			left: 50px;
+			bottom: 3px;
+		}
+	}
+	.author{
+		&:before{
+			left: 5px;
+			height: 13px;
+			width: 13px;
+			background-image: url("../img/author.png");
+		}
+	}
+	.posted{
+		&:before{
+			height: 13px;
+			width: 14px;
+			background-image: url("../img/clock.png");
+		}
+	}
+	.comments-no{
+		&:before{
+			height: 14px;
+			width: 16px;
+			background-image: url("../img/cloud.png");
+		}
+	}
+}

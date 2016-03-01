@@ -9,4 +9,14 @@ h1{
 		position: absolute;
 		bottom: 10px;
 	}
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: -50px;
+		bottom: 15px;
+		background-image: url('../img/star.png');
+	}
 }
