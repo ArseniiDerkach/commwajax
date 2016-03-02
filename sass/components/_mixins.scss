@@ -1,0 +1,31 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin regular(){
+	color: $font-regular;
+	// @include font-face(Stag, fonts/Stag/StagSans-Book);
+	font-family: "Stag-Book";
+	
+}
+
+@mixin comment(){
+	font-size: 1em;
+	text-decoration: none;
+	color: $font-gray;
+	// @include font-face(Stag, fonts/Stag/StagSans-Medium);
+	font-family: "Stag-Medium";
+	
+}
+
+@mixin fa-icon(){
+		font-family: FontAwesome;
+		display: inline-block;
+		margin-right: 5px;
+}

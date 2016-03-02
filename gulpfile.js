@@ -7,6 +7,12 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('build'));
   gulp.src('./src/img/*.*')
   .pipe(gulp.dest('build/img/'));
+  gulp.src('./src/css/*.*')
+  .pipe(gulp.dest('build/css/'));
+  gulp.src('./src/plugins/**')
+  .pipe(gulp.dest('build/plugins/'));
+  gulp.src('./src/fonts/**')
+  .pipe(gulp.dest('build/fonts/'));
 });
 
 // compile all sass files to css

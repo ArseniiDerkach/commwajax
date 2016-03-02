@@ -1,3 +1,6 @@
+body{
+	@include regular();
+}
 .date{
 	@include comment();
 }
@@ -5,37 +8,27 @@
 	@include comment();
 	span{
 		position: relative;
-		padding-left: 70px;
+		margin-left: 50px;
 		&:first-of-type{
-			padding-left: 25px;
+			margin-left: 0;
 		}
-		@include iconbefore();
 		&:before{
-			
-			left: 50px;
-			bottom: 3px;
+			@include fa-icon();
 		}
 	}
 	.author{
 		&:before{
-			left: 5px;
-			height: 13px;
-			width: 13px;
-			background-image: url("../img/author.png");
+			content: "\f007";
 		}
 	}
 	.posted{
 		&:before{
-			height: 13px;
-			width: 14px;
-			background-image: url("../img/clock.png");
+			content: "\f017";
 		}
 	}
 	.comments-no{
 		&:before{
-			height: 14px;
-			width: 16px;
-			background-image: url("../img/cloud.png");
+			content: "\f075";
 		}
 	}
 }
