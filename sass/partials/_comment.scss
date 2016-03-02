@@ -1,0 +1,84 @@
+.comments{
+	margin-top:0 !important;
+	padding:0;
+	width:100%;
+input[type="submit"]{
+	float: right;
+	height: 44px;
+	width: 144px;
+	margin: 10px 0;
+	background-color: $yellow-button;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+	.new-comment{
+		border-bottom: 2px solid $gray;
+		@include clearfix();
+		#new{
+			position: relative;
+			height: 80px;
+			max-width: 670px;
+			width: 100%;
+			border: 2px solid $gray;
+			border-radius: 5px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+	}
+	.comment{
+		margin-top: 40px;
+	}
+	.date-added{
+		@include comment();
+		@include iconbefore();
+		padding-left: 20px;
+		&:before{
+			left: 0px;
+			bottom: 3px;
+			height: 13px;
+			width: 14px;
+			background-image: url("../img/clock.png");
+		}
+	}
+	.comm-author{
+		color: #000;
+		text-decoration: none;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	.user-avatar{
+		padding: 2px;
+		border: 2px solid $gray;
+		border-radius: 4px;
+		width: 80px;
+		height: 80px;
+		margin-right: 22px;
+		float: left;
+	}
+	.form-reply{
+		padding-left: 110px;
+		@include clearfix();
+		.cancel{
+			float: right;
+		}
+		.text-reply{
+			position: relative;
+			height: 80px;
+			max-width: 670px;
+			width: 100%;
+			border: 2px solid rgb(242, 242, 242);
+			border-radius: 5px;
+			padding: 10px;
+			box-sizing: border-box;
+			float: right;
+		}
+	}
+	.replied{
+		padding-left: 110px;
+		.reply-avatar{
+			width: 60px;
+			height: 60px;
+		}
+
+	}
+}

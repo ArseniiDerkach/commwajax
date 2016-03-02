@@ -1,20 +1,17 @@
 .date{
-	font-size: 1em;
-	color: $font-gray;
+	@include comment();
 }
 .support-info{
-	font-size: 1em;
-	color: $font-gray;
+	@include comment();
 	span{
 		position: relative;
 		padding-left: 70px;
 		&:first-of-type{
 			padding-left: 25px;
 		}
+		@include iconbefore();
 		&:before{
-			content: "";
-			display: block;
-			position: absolute;
+			
 			left: 50px;
 			bottom: 3px;
 		}

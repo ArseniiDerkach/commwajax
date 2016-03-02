@@ -9,12 +9,6 @@ section{
 	background-color: $white;
 	padding: 0 80px;
 	box-sizing: padding-box;
-	.post{
-		margin: 0 80px;
-		p:last-of-type{
-			// padding-bottom: 5px;
-			// border-bottom: 2px solid $gray;
-		}
 		.support-info{
 			margin: 5px 0;
 			padding: 20px 0;
@@ -22,9 +16,4 @@ section{
 			border-color: $gray;
 			border-width: 2px 0 2px 0;
 		}
-	}
-}
-.comments{
-	margin-top:0 !important;
-
 }
