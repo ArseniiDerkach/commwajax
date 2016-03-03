@@ -161,6 +161,15 @@ figure {
       box-sizing: border-box; }
   .comments .comment {
     margin-top: 40px; }
+    .comments .comment #edit {
+      position: relative;
+      height: 80px;
+      max-width: 670px;
+      width: 100%;
+      border: 2px solid #f2f2f2;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box; }
   .comments .date-added {
     font-size: 1em;
     text-decoration: none;

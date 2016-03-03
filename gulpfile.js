@@ -13,11 +13,17 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('build/plugins/'));
   gulp.src('./src/fonts/**')
   .pipe(gulp.dest('build/fonts/'));
+  gulp.src('./src/js/**')
+  .pipe(gulp.dest('build/js/'));
 });
 
 // compile all sass files to css
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css'));
 });
+gulp.task('js', function() {
+  gulp.src('./js/**')
+  .pipe(gulp.dest('build/js/'));
+})

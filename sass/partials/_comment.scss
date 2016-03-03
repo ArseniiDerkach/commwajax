@@ -27,6 +27,16 @@
 	}
 	.comment{
 		margin-top: 40px;
+		#edit{
+			position: relative;
+			height: 80px;
+			max-width: 670px;
+			width: 100%;
+			border: 2px solid $gray;
+			border-radius: 5px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
 	}
 	.date-added{
 		@include comment();
