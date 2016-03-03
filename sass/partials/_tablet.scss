@@ -1,0 +1,77 @@
+@include tablet{
+	html, body{
+		font-size: 13px;
+	}
+	section{
+		width: 100%;
+		padding: 0 40px;
+		h1{
+			&:before{
+				left: -35px;
+			}
+		}
+		.post{
+			p{
+				font-size: 1.2em;
+			}
+		}
+		.image-lg{
+			display: none;
+		}
+		.date{
+			display: block;
+		}
+		.image-md-sm{
+			display: block;
+			border: 5px solid $gray;
+			margin: 10px 0;
+			float: none;
+			img{
+				width: 100%;
+			}
+		}
+		.support-info{
+			span{
+				margin-left: 0;
+				display: block;
+				margin-top: 5px;
+			}
+		}
+	}
+	.comments{
+		.edit,.delete,.reply{
+			font-size: 1em;
+		}
+		.new-comment{
+
+			.user-avatar{
+				width: 20%;
+				margin-right: 5%;
+			}
+			#new{
+				position: relative;
+				height: 80px;
+				max-width: 670px;
+				width: 72%;
+				border: 2px solid $gray;
+				border-radius: 5px;
+				padding: 10px;
+				box-sizing: border-box;
+				float: right;
+			}
+		}
+		.form-reply, .replied{
+			margin-left: 0;
+			.to, .cancel{
+				font-size: 1em;
+			}
+		}
+		.replied{
+			margin-left: 0;
+			br{
+				display: inline;
+			}
+		}
+	}
+	
+}

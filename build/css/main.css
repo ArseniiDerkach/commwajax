@@ -2,25 +2,33 @@ header {
   height: 400px;
   background-image: url(../img/header.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   width: 100%;
   z-index: -1; }
 
 body {
   color: #454545;
-  font-family: "Stag-Book"; }
+  font-family: "Stag-Book";
+  font-size: 1.2em; }
 
 .date {
   font-size: 1em;
   text-decoration: none;
   color: #b6b6b6;
   font-family: "Stag-Medium"; }
+  @media (max-width: 767px) {
+    .date {
+      font-size: 0.8em; } }
 
 .support-info {
   font-size: 1em;
   text-decoration: none;
   color: #b6b6b6;
   font-family: "Stag-Medium"; }
+  @media (max-width: 767px) {
+    .support-info {
+      font-size: 0.8em; } }
   .support-info span {
     position: relative;
     margin-left: 50px; }
@@ -73,7 +81,7 @@ h1 {
     width: 32px;
     height: 32px;
     left: -50px;
-    bottom: 15px;
+    bottom: 9px;
     background-image: url("../img/star.png"); }
 
 h2 {
@@ -83,16 +91,13 @@ figure {
   float: left;
   position: relative; }
 
-.image-md-sm {
-  display: none; }
-
-.image-lg {
+.image-lg, .image-md-sm {
   margin-left: -80px;
   margin-right: 20px;
   border: 5px solid #f2f2f2;
   border-left: 0;
   line-height: 0; }
-  .image-lg figcaption {
+  .image-lg figcaption, .image-md-sm figcaption {
     width: 94%;
     height: 94%;
     position: absolute;
@@ -103,15 +108,15 @@ figure {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     z-index: 1; }
-    .image-lg figcaption:hover {
+    .image-lg figcaption:hover, .image-md-sm figcaption:hover {
       animation: fadeIn 0.8s both;
       opacity: 1; }
-    .image-lg figcaption div {
+    .image-lg figcaption div, .image-md-sm figcaption div {
       position: absolute;
       bottom: 20px;
       text-align: center;
       width: 100%; }
-    .image-lg figcaption a {
+    .image-lg figcaption a, .image-md-sm figcaption a {
       display: block;
       position: absolute;
       width: 100%;
@@ -119,6 +124,12 @@ figure {
       top: 0;
       left: 0;
       background: url("../img/eye.png") center center no-repeat; }
+
+.image-md-sm {
+  display: none; }
+
+.image-lg {
+  display: block; }
 
 .comments {
   margin-top: 0 !important;
@@ -155,6 +166,9 @@ figure {
     text-decoration: none;
     color: #b6b6b6;
     font-family: "Stag-Medium"; }
+    @media (max-width: 767px) {
+      .comments .date-added {
+        font-size: 0.8em; } }
     .comments .date-added:before {
       font-family: FontAwesome;
       display: inline-block;
@@ -167,6 +181,9 @@ figure {
     text-decoration: none;
     color: #b6b6b6;
     font-family: "Stag-Medium"; }
+    @media (max-width: 767px) {
+      .comments .edit {
+        font-size: 0.8em; } }
     .comments .edit:before {
       font-family: FontAwesome;
       display: inline-block;
@@ -177,6 +194,9 @@ figure {
     text-decoration: none;
     color: #b6b6b6;
     font-family: "Stag-Medium"; }
+    @media (max-width: 767px) {
+      .comments .delete {
+        font-size: 0.8em; } }
     .comments .delete:before {
       font-family: FontAwesome;
       display: inline-block;
@@ -187,6 +207,9 @@ figure {
     text-decoration: none;
     color: #b6b6b6;
     font-family: "Stag-Medium"; }
+    @media (max-width: 767px) {
+      .comments .reply {
+        font-size: 0.8em; } }
     .comments .reply:before {
       font-family: FontAwesome;
       display: inline-block;
@@ -202,7 +225,6 @@ figure {
     border: 2px solid #f2f2f2;
     border-radius: 4px;
     width: 80px;
-    height: 80px;
     margin-right: 22px;
     float: left; }
   .comments .form-reply {
@@ -218,6 +240,9 @@ figure {
       text-decoration: none;
       color: #b6b6b6;
       font-family: "Stag-Medium"; }
+      @media (max-width: 767px) {
+        .comments .form-reply .cancel {
+          font-size: 0.8em; } }
       .comments .form-reply .cancel:before {
         font-family: FontAwesome;
         display: inline-block;
@@ -228,6 +253,9 @@ figure {
       text-decoration: none;
       color: #b6b6b6;
       font-family: "Stag-Medium"; }
+      @media (max-width: 767px) {
+        .comments .form-reply .to {
+          font-size: 0.8em; } }
       .comments .form-reply .to:before {
         font-family: FontAwesome;
         display: inline-block;
@@ -246,16 +274,118 @@ figure {
       float: right; }
   .comments .replied {
     margin: 30px 0 0 110px; }
+    .comments .replied p {
+      padding-left: 90px; }
+    .comments .replied br {
+      display: none; }
     .comments .replied .reply-avatar {
-      width: 60px;
-      height: 60px; }
+      width: 60px; }
     .comments .replied .replied-to {
       font-size: 1em;
       text-decoration: none;
       color: #b6b6b6;
       font-family: "Stag-Medium"; }
+      @media (max-width: 767px) {
+        .comments .replied .replied-to {
+          font-size: 0.8em; } }
       .comments .replied .replied-to:before {
         font-family: FontAwesome;
         display: inline-block;
         margin-right: 5px;
         content: "\f064"; }
+  .comments .load-more {
+    padding: 50px 0 60px 0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    height: 45px; }
+    .comments .load-more:before, .comments .load-more:after {
+      background-color: #f2f2f2;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%; }
+    .comments .load-more:before {
+      right: 0.5em;
+      margin-left: -50%; }
+    .comments .load-more:after {
+      left: 0.5em;
+      margin-right: -50%; }
+    .comments .load-more span {
+      border: 1px solid #f2f2f2;
+      padding: 10px;
+      display: inline-block;
+      font-size: 1em;
+      text-decoration: none;
+      color: #b6b6b6;
+      font-family: "Stag-Medium"; }
+      @media (max-width: 767px) {
+        .comments .load-more span {
+          font-size: 0.8em; } }
+
+@media (min-width: 768px) and (max-width: 956px) {
+  section {
+    width: 751px; }
+  .comments .new-comment #new {
+    max-width: 481px; } }
+
+@media (max-width: 767px) {
+  html, body {
+    font-size: 13px; }
+  section {
+    width: 100%;
+    padding: 0 40px; }
+    section h1:before {
+      left: -35px; }
+    section .post p {
+      font-size: 1.2em; }
+    section .image-lg {
+      display: none; }
+    section .date {
+      display: block; }
+    section .image-md-sm {
+      display: block;
+      border: 5px solid #f2f2f2;
+      margin: 10px 0;
+      float: none; }
+      section .image-md-sm img {
+        width: 100%; }
+    section .support-info span {
+      margin-left: 0;
+      display: block;
+      margin-top: 5px; }
+  .comments .edit, .comments .delete, .comments .reply {
+    font-size: 1em; }
+  .comments .new-comment .user-avatar {
+    width: 20%;
+    margin-right: 5%; }
+  .comments .new-comment #new {
+    position: relative;
+    height: 80px;
+    max-width: 670px;
+    width: 72%;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right; }
+  .comments .form-reply, .comments .replied {
+    margin-left: 0; }
+    .comments .form-reply .to, .comments .form-reply .cancel, .comments .replied .to, .comments .replied .cancel {
+      font-size: 1em; }
+  .comments .replied {
+    margin-left: 0; }
+    .comments .replied br {
+      display: inline; } }
+
+@media (max-width: 479px) {
+  section {
+    padding: 0 10px; }
+    section h1 {
+      padding-left: 40px; }
+      section h1:before {
+        left: 0; }
+  .comments .date-added {
+    display: block; } }

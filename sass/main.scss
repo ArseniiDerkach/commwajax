@@ -1,4 +1,5 @@
 @import "header";
+@import "constants/screensize";
 @import "constants/colors";
 @import "components/mixins";
 @import "partials/text";
@@ -6,3 +7,6 @@
 @import "partials/headers";
 @import "partials/media";
 @import "partials/comment";
+@import "partials/laptop";
+@import "partials/tablet";
+@import "partials/mobile";

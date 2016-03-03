@@ -2,10 +2,7 @@ figure{
 	float: left;
 	position: relative;
 }
-.image-md-sm{
-	display: none;
-}
-.image-lg{
+.image-lg, .image-md-sm{
 	margin-left: -80px;
 	margin-right: 20px;
 	border: 5px solid $gray;
@@ -33,8 +30,7 @@ figure{
 			width: 100%;
 			.photo-by{
 				
-			}
-			
+			}		
 		}
 	    a{
 			display: block;
@@ -44,12 +40,12 @@ figure{
 			top: 0;
 			left: 0;
 			background: url("../img/eye.png") center center no-repeat;
-			// img{
-			// 	position: absolute;
-			// 	top: 50%;
-			// 	left: 50%;
-			// 	transition
-			// }
 	    }
 	}
+}
+.image-md-sm{
+	display: none;
+}
+.image-lg{
+	display: block;
 }

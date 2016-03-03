@@ -2,15 +2,15 @@
 	margin-top:0 !important;
 	padding:0;
 	width:100%;
-input[type="submit"]{
-	float: right;
-	height: 44px;
-	width: 144px;
-	margin: 10px 0;
-	background-color: $yellow-button;
-	border: 1px solid transparent;
-	border-radius: 5px;
-}
+	input[type="submit"]{
+		float: right;
+		height: 44px;
+		width: 144px;
+		margin: 10px 0;
+		background-color: $yellow-button;
+		border: 1px solid transparent;
+		border-radius: 5px;
+	}
 	.new-comment{
 		border-bottom: 2px solid $gray;
 		@include clearfix();
@@ -70,7 +70,6 @@ input[type="submit"]{
 		border: 2px solid $gray;
 		border-radius: 4px;
 		width: 80px;
-		height: 80px;
 		margin-right: 22px;
 		float: left;
 	}
@@ -107,9 +106,14 @@ input[type="submit"]{
 	}
 	.replied{
 		margin: 30px 0 0 110px;
+		p{
+			padding-left: 90px;
+		}
+		br{
+			display: none;
+		}
 		.reply-avatar{
 			width: 60px;
-			height: 60px;
 		}
 		.replied-to{
 			@include comment();
@@ -118,6 +122,35 @@ input[type="submit"]{
 				content: "\f064";
 			}
 		}
-
+	}
+	.load-more{
+		padding: 50px 0 60px 0;
+		display: block;
+		overflow: hidden;
+		text-align: center;
+		height: 45px;
+		&:before, &:after {
+			background-color: $gray;
+			content: "";
+			display: inline-block;
+			height: 1px;
+			position: relative;
+			vertical-align: middle;
+			width: 50%;
+		}
+		&:before {
+		right: 0.5em;
+		margin-left: -50%;
+		}
+		&:after {
+		left: 0.5em;
+		margin-right: -50%;
+		}
+		span{
+			border: 1px solid $gray;
+			padding: 10px;
+			display: inline-block;
+			@include comment();
+		}
 	}
 }

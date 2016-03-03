@@ -1,0 +1,16 @@
+@include mobile{
+	section{
+		h1{
+			padding-left: 40px;
+			&:before{
+				left: 0;
+			}
+		}
+		padding: 0 10px;
+	}
+	.comments{
+		.date-added{
+			display: block;
+		}
+	}
+}

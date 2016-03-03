@@ -10,8 +10,8 @@
 }
 @mixin regular(){
 	color: $font-regular;
-	// @include font-face(Stag, fonts/Stag/StagSans-Book);
 	font-family: "Stag-Book";
+	font-size: 1.2em;
 	
 }
 
@@ -19,8 +19,10 @@
 	font-size: 1em;
 	text-decoration: none;
 	color: $font-gray;
-	// @include font-face(Stag, fonts/Stag/StagSans-Medium);
 	font-family: "Stag-Medium";
+	@include tablet{
+		font-size: 0.8em;
+	}
 	
 }
 
@@ -29,3 +31,22 @@
 		display: inline-block;
 		margin-right: 5px;
 }
+
+@mixin mobile {
+	@media (max-width: #{$mobile-width - 1px}) {
+	    @content;
+	  }
+}
+
+@mixin tablet {
+	@media (max-width: #{$tablet-width - 1px}) {
+	    @content;
+	  }
+}
+
+@mixin laptop {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+	    @content;
+	  }
+}
+
