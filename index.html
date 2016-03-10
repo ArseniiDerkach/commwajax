@@ -21,7 +21,6 @@
                 </figcaption>
                 <img src="img/in-post.jpg" alt="A photo by John Doe">
             </figure>
-			<!-- <img src="img/in-post.jpg" alt="" class="image-md-sm"> -->
 			<p>
 				Made last it seen went no just when of by. Occasional entreaties comparison me difficulty so themselves. At brother inquiry of offices without do my service. As particular to companions at sentiments. Weather however luckily enquire so certain do. Aware did stood was day under ask. Dearest affixed enquire on explain opinion he. Reached who the mrs joy offices pleased. Towards did colonel article any parties. 
 			</p>
@@ -55,91 +54,13 @@
 				<h2>Leave comment:</h2>
 				<img src="img/user1-avatar.png" alt="" class="user-avatar">
 				<textarea name="new-comment" id="new" placeholder="Your Message"></textarea>
-				<input type="submit" value="Send">
+				<button id="add-new">Send</button>
 			</form>
-			<article class="comment">
-				<img src="img/user1-avatar.png" alt="" class="user-avatar">
-				<a href="#" class="comm-author">Kurt Thompson</a>
-				<span class="date-added">2015-07-06 at  13:57</span>
-				<p>If not everyone makes money blogging, why is blogging so popular?</p>
-				<a href="#" class="edit">Edit</a>
-				<a href="#" class="delete">Delete</a>
-				<a href="#" class="reply">Reply</a>
-
-<!-- 				<form action="#" class="form-reply">
-					<span class="to">Kurt Thompson</span>
-					<a href="#" class="cancel">Cancel</a>
-					<textarea name="reply" class="text-reply" placeholder="Your Message"></textarea>
-					<input type="submit" value="Send">
-
-				</form> -->
-				<article class="replied">
-					<img src="img/user2-avatar.png" alt="" class="user-avatar reply-avatar">
-					<a href="#" class="comm-author who-replied">Sarah Fleming</a>
-					<br>
-					<span class="replied-to">Kurt Thompson</span>
-					<span class="date-added">2015-07-06 at  13:57</span>
-					<p>A WordPress blog will stand out! The possibilities of designing a site with WordPress are immense indeed.</p>
-				</article>
-				<article class="replied">
-					<img src="img/user1-avatar.png" alt="" class="user-avatar reply-avatar">
-					<a href="#" class="comm-author who-replied">Sarah Fleming</a>
-					<br>
-					<span class="replied-to">Kurt Thompson</span>
-					<span class="date-added">2015-07-06 at  13:57</span>
-					<p>A WordPress blog will stand out!</p>
-				</article>
-				<article class="replied">
-					<img src="img/user3-avatar.png" alt="" class="user-avatar reply-avatar">
-					<a href="#" class="comm-author who-replied">Sarah Fleming</a>
-					<br>
-					<span class="replied-to">Kurt Thompson</span>
-					<span class="date-added">2015-07-06 at  13:57</span>
-					<p>A WordPress blog will stand out!</p>
-				</article>
-				<article class="replied">
-					<img src="img/user4-avatar.png" alt="" class="user-avatar reply-avatar">
-					<a href="#" class="comm-author who-replied">Sarah Fleming</a>
-					<br>
-					<span class="replied-to">Kurt Thompson</span>
-					<span class="date-added">2015-07-06 at  13:57</span>
-					<p>A WordPress blog will stand out!</p>
-				</article>
-			</article>
-			<article class="comment">
-				<img src="img/user1-avatar.png" alt="" class="user-avatar">
-				<a href="#" class="comm-author">Kurt Thompson</a>
-				<span class="date-added">2015-07-06 at  13:57</span>
-				<p>If not everyone makes money blogging, why is blogging so popular?</p>
-				<a href="#" class="edit">Edit</a>
-				<a href="#" class="delete">Delete</a>
-				<a href="#" class="reply">Reply</a>
-				<article class="replied">
-					<img src="img/user4-avatar.png" alt="" class="user-avatar reply-avatar">
-					<a href="#" class="comm-author who-replied">Sarah Fleming</a>
-					<br>
-					<span class="replied-to">Kurt Thompson</span>
-					<span class="date-added">2015-07-06 at  13:57</span>
-					<p>A WordPress blog will stand out!</p>
-				</article>
-				
-			</article>
-			<article class="comment">
-				<img src="img/user3-avatar.png" alt="" class="user-avatar">
-				<a href="#" class="comm-author">Kurt Thompson</a>
-				<span class="date-added">2015-07-06 at  13:57</span>
-				<p>If not everyone makes money blogging, why is blogging so popular?</p>
-				<a href="#" class="reply">Reply</a>				
-			</article>
-			<article class="comment">
-				<img src="img/user4-avatar.png" alt="" class="user-avatar">
-				<a href="#" class="comm-author">Kurt Thompson</a>
-				<span class="date-added">2015-07-06 at  13:57</span>
-				<p>If not everyone makes money blogging, why is blogging so popular?</p>
-				<a href="#" class="reply">Reply</a>			
-			</article>
-			<a href="#" class="load-more"><span>Load more comments</span></a>
+			<div class="load-more">
+				<a href="#">Load more comments</a>
+			</div>
 		</section>
+		<div class="num-loaded" style="display:none;">0</div>
 	</section>
 	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

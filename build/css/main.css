@@ -134,8 +134,9 @@ figure {
 .comments {
   margin-top: 0 !important;
   padding: 0;
-  width: 100%; }
-  .comments input[type="submit"] {
+  width: 100%;
+  padding-bottom: 60px; }
+  .comments button {
     float: right;
     height: 44px;
     width: 144px;
@@ -182,7 +183,8 @@ figure {
       font-family: FontAwesome;
       display: inline-block;
       margin-right: 5px;
-      content: "\f017"; }
+      content: "\f017";
+      margin-left: 5px; }
   .comments a {
     margin-right: 10px; }
   .comments .edit {
@@ -303,7 +305,7 @@ figure {
         margin-right: 5px;
         content: "\f064"; }
   .comments .load-more {
-    padding: 50px 0 60px 0;
+    margin-top: 50px;
     display: block;
     overflow: hidden;
     text-align: center;
@@ -322,21 +324,26 @@ figure {
     .comments .load-more:after {
       left: 0.5em;
       margin-right: -50%; }
-    .comments .load-more span {
+    .comments .load-more a {
       border: 1px solid #f2f2f2;
       padding: 10px;
       display: inline-block;
+      margin-right: 0;
       font-size: 1em;
       text-decoration: none;
       color: #b6b6b6;
       font-family: "Stag-Medium"; }
       @media (max-width: 767px) {
-        .comments .load-more span {
+        .comments .load-more a {
           font-size: 0.8em; } }
 
 @media (min-width: 768px) and (max-width: 956px) {
   section {
     width: 751px; }
+    section .support-info span {
+      margin-left: 0;
+      display: block;
+      margin-top: 5px; }
   .comments .new-comment #new {
     max-width: 481px; } }
 

@@ -2,7 +2,8 @@
 	margin-top:0 !important;
 	padding:0;
 	width:100%;
-	input[type="submit"]{
+	padding-bottom: 60px;
+	button{
 		float: right;
 		height: 44px;
 		width: 144px;
@@ -43,6 +44,7 @@
 		&:before{
 			@include fa-icon();
 			content: "\f017";
+			margin-left: 5px;
 		}
 	}
 	a{
@@ -134,7 +136,7 @@
 		}
 	}
 	.load-more{
-		padding: 50px 0 60px 0;
+		margin-top: 50px;
 		display: block;
 		overflow: hidden;
 		text-align: center;
@@ -156,10 +158,11 @@
 		left: 0.5em;
 		margin-right: -50%;
 		}
-		span{
+		a{
 			border: 1px solid $gray;
 			padding: 10px;
 			display: inline-block;
+			margin-right: 0;
 			@include comment();
 		}
 	}

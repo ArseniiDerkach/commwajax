@@ -1,6 +1,13 @@
 @include laptop{
 	section{
 		width: 751px;
+		.support-info{
+			span{
+				margin-left: 0;
+				display: block;
+				margin-top: 5px;
+			}
+		}
 	}
 	.comments{
 	.new-comment{
